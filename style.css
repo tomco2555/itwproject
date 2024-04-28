@@ -30,6 +30,7 @@ body {
     font-size: 16px;
 }
 
+/*lowers font size bcs of smoller screen*/
 @media only screen and (max-width: 768px) {
     body {
         font-size: 14px;
@@ -42,11 +43,13 @@ a {
     color: var(--text-color);
 }
 
+/*color for the active items in navbar*/
 .active {
     color: blue;
 }
 
 /* HEADER */
+/*setting the whole header of the page*/
 header {
     display: flex;
     position: fixed;
@@ -57,6 +60,7 @@ header {
     width: 100%;
 }
 
+/*clickable main page(most left) of the navbar*/
 header h1 a {
     display: flex;
     align-items: center;
@@ -78,11 +82,13 @@ header h1 {
     margin-right: 100px;
 }
 
+/*navbar*/
 nav {
     align-self: center;
     margin-left: 0;
 }
 
+/*item of the navbar*/
 nav ul li {
     display: inline-block;
     text-decoration: none;
@@ -94,6 +100,7 @@ nav ul li a:hover {
     color: yellow;
 }
 
+/*dropdown menu for the Projects item*/
 .dropdown-menu {
     display: none;
     z-index: 1000;
@@ -107,11 +114,11 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Style for dropdown items */
 .dropdown-menu li {
     display: block;
 }
 
+/*changes for smoller screen*/
 @media only screen and (max-width: 768px) {
     header {
         padding: 10px 0;
@@ -153,6 +160,7 @@ nav ul li a:hover {
 }
 
 /* MAIN */
+/*default settings for whole content part of the page*/
 main {
     padding-top: 80px;
 }
@@ -171,6 +179,16 @@ h2 {
     padding-bottom: 40px;
 }
 
+h3 {
+    font-size: 25px;
+    color: orange;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/*About section*/
 #about div h3 {
     font-size: 25px;
     color: orange;
@@ -189,15 +207,6 @@ h2 {
     margin: 0 auto;
 }
 
-h3 {
-    font-size: 25px;
-    color: orange;
-}
-
-h4 {
-    font-size: 20px;
-}
-
 @media only screen and (max-width: 768px) {
     main {
         padding-top: 160px;
@@ -205,6 +214,7 @@ h4 {
 
     section {
         scroll-margin-top: 160px;
+        padding-top: 50px;
         padding-bottom: 80px;
     }
 
@@ -225,6 +235,7 @@ h4 {
     }
 }
 
+/*Education section*/
 .elem_school, .high_school, .university {
     padding-top: 30px;
     font-size: 20px;
@@ -273,6 +284,7 @@ h4 {
     }
 }
 
+/*setting the link colors*/
 #interests a:visited, #contact a:visited {
     color: pink;
 }
@@ -289,6 +301,7 @@ h4 {
     color: green;
 }
 
+/*Interests section*/
 #music {
     padding-bottom: 20px;
 }
@@ -312,6 +325,7 @@ h4 {
     }
 }
 
+/*Skills section*/
 #skills_content p {
     padding-bottom: 20px;
 }
@@ -337,6 +351,51 @@ h4 {
     }
 }
 
+/*Projects section*/
+#projects button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#projects button.active_btn {
+    background-color: rgb(122, 122, 255);
+    color: black;
+}
+
+/*Animation for content flying in from right side after pressing button*/
+@keyframes flyInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .fly_in {
+    animation: flyInFromRight 1s ease-in-out forwards;
+  }
+
+.year_subjects {
+    display: none;
+}
+
+#_1year_subjects {
+    display: block;
+}
+
+#projects button:hover {
+    background-color: lightblue;
+}
+
 #_1year, #_2year, #_3year {
     scroll-margin: 80px;
 }
@@ -347,6 +406,42 @@ h4 {
     padding-bottom: 10px;
 }
 
+/*Contact section*/
 #contact_content #sth {
     padding-bottom: 400px;
+}
+
+/*Blog section*/
+#blog #list_blogs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#blog .post {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+#blog button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-weight: bold;
+}
+
+#blog button:hover {
+    color: red;
+}
+
+#blog .full_text {
+    max-width: 80%;
+    display: none;
+    margin: 0 0;
+}
+
+.bold_text {
+    font-weight: bold;
 }

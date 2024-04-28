@@ -25,6 +25,7 @@
                 </li>
                 <li><a href="#interests" class="menuitem">Interests</a></li>
                 <li><a href="#skills" class="menuitem">Skills</a></li>
+                <li><a href="#blog" class="menuitem">Blog</a></li>
                 <li><a href="#contact" class="menuitem">Contact</a></li>
             </ul> 
         </nav>
@@ -81,8 +82,11 @@
         <section id="projects">
             <div>
                 <h2>PROJECTS</h2>
-                <h3 id="_1year">1st Year</h3>
-                <div id="_1year_subjects">
+                <button class="year-button active_btn" data-year="1">1st Year</button>
+                <button class="year-button" data-year="2">2nd Year</button>
+                <button class="year-button" data-year="3">3rd Year</button>
+                <div id="_1year_subjects" class="year_subjects">
+                    <h3 id="_1year">1st Year</h3>
                     <h4>IUS</h4>
                     <p>Only one project. Objective of the project is to create Use case, ER diagram for information system</p>
                     <h4>IZP</h4>
@@ -94,8 +98,8 @@
                     <h4>IOS</h4>
                     <p>2 projects. One in bash, which is usually for filtering data from files and second one is in C where you have to use fork for doing multiple tasks.</p>
                 </div>
-                <h3 id="_2year">2nd Year</h3>
-                <div id="_2year_subjects">
+                <div id="_2year_subjects" class="year_subjects">
+                    <h3 id="_2year">2nd Year</h3>
                     <h4>IPT</h4>
                     <p>Project consists of multiple statistics exercises which will test knowledge gained during the study of the subject. Exercises range from easy to really hard ones.</p>
                     <h4>ISS</h4>
@@ -117,8 +121,8 @@
                     <h4>IPP</h4>
                     <p>Whole subject is about objected oriented programming however the first project can be done without it. In the first one you have to create script for generating XML file for interpreter. Second project is much more harder because you have to implement said interpreter.</p>
                 </div>
-                <h3 id="_3year">3rd Year</h3>
-                <div id="_3year_subjects">
+                <div id="_3year_subjects" class="year_subjects">
+                    <h3 id="_3year">3rd Year</h3>
                     <h4>IIS</h4>
                     <p>Another group complex project. You have to create information system, its frontend, backend and database. You are free to use any programming languages.</p>
                     <h4>IMS</h4>
@@ -177,6 +181,36 @@
                     <li>Fast learner</li>
                     <li>Good at cooperating in teams</li>
                   </ul> 
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>BLOG</h2>
+            <div id="list_blogs">
+                <div class="post">
+                    <h3>What is new in Python 3.11</h3>
+                    <p class="description">This post talks about all the new and interesting features in the newest version of Python.</p>
+                    <p class="full_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="read_more">Read more...</button>
+                </div>
+                <div class="post">
+                    <h3>What is new in PHP 8.3</h3>
+                    <p class="description">This post talks about all the new and interesting features in the newest version of PHP.</p>
+                    <p class="full_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="read_more">Read more...</button>
+                </div>
+                <div class="post">
+                    <h3>Who has won last F1?</h3>
+                    <p class="description">Are you interested about F1? Then you are in the right place to get some news about the last F1 season. Was it Vettel? Was it Hamilton? Click and you will find out.</p>
+                    <p class="full_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="read_more">Read more...</button>
+                </div>
+                <div class="post">
+                    <h3>Is PS5 shortage still a thing?</h3>
+                    <p class="description">We will dive deep in what were the reasons of the shortage and if there is any shortage right now.</p>
+                    <p class="full_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="read_more">Read more...</button>
+                </div>
             </div>
         </section>
 
