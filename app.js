@@ -64,22 +64,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const yearButtons = document.querySelectorAll(".year-button");
     const yearSubjects = document.querySelectorAll(".year_subjects");
 
-    // Function to handle clicking on dropdown menu items
     dropdownMenuItems.forEach(function(item) {
         item.addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent default anchor behavior
+            event.preventDefault();
 
-            const targetId = item.getAttribute("href").substring(1); // Get target section id
-            const targetSection = document.getElementById(targetId); // Get target section
+            const targetId = item.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
             console.log(targetSection);
 
-            // Show the corresponding year subjects section
             yearSubjects.forEach(function(subject) {
                 subject.style.display = "none";
             });
             document.getElementById(targetId + "_subjects").style.display = "block";
 
-            // Change the active button in the navbar
             yearButtons.forEach(function(button) {
                 button.classList.remove("active_btn");
             });
